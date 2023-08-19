@@ -1,15 +1,15 @@
-// server.js
-const express = require("express");
-const app = express();
-const path = require("path");
-const PORT = process.env.PORT || 3000;
+//* BLOGS INDEX FILE
+const server = require("./src/routes/app");
+const keys = require("./src/config/keys");
+const connectToDatabase = require("./src/config/db");
 
-app.use(express.static("frontend"));
+//* TO PORT.....
+const Port = keys.PORT || 7070;
 
-app.get("/getData", (req, res) => {
-    res.json({ message: "We are cooking at the moment..." });
-});
+//* CONNECT TO DB
+connectToDatabase();
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+//* LISTENING TO PORT
+server.listen(Port, () => {
+  console.log(`listening to port ${Port}`);
 });
