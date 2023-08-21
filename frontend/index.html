@@ -7,6 +7,12 @@
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-light">
@@ -15,34 +21,81 @@
                 <img src="images/logo.png" alt="Teen Logo" style="width:50px;" class="rounded">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse justify-content-center align-items-around" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+    
+            <!-- Use "d-md-flex justify-content-center" to center items on medium screens -->
+            <div class="collapse navbar-collapse d-md-flex justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav me-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link btn" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link btn" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link btn" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link btn" href="#">Register</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link btn" href="#">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- Hero section starts here -->
 
+    <div class="container-fluid hero-section text-center d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <h1 class="h1 color-light-blue">Fuel Your Inquisitiveness.</h1>
+            <h5 class="h5 mb-5 color-light-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas omnis itaque quasi illo. Laudantium.</h5>
+            <button class="btn color-db-btn px-4 py-2">Get Started</button>
+        </div>
+    </div>
 
     <!-- The next section goes here -->
+
+    <div class="container-fluid pt-4 section-two">
+        <div class="container">
+            <h3 class="h3">Trending on blogs...</h3>
+        </div>
+        <div class="container mx-auto mt-4 d-flex justify-content-between align-items-center">
+            <div class="card mx-auto d-block col-md-3">
+                <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
+                  <p class="card-text">Some example text.</p>
+                </div>
+              </div>
+            <div class="card mx-auto d-block col-md-3">
+                <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
+                  <p class="card-text">Some example text.</p>
+                </div>
+              </div>
+            <div class="card mx-auto d-block col-md-3">
+                <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
+                  <p class="card-text">Some example text.</p>
+                </div>
+              </div>
+        </div>
+    </div>
 
 
     <!-- The next following section goes here -->
 
 
     <!-- Any other section is to be written here -->
+
+    <!-- Footer -->
+    <div class="container-fluid footer-section"></div>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
