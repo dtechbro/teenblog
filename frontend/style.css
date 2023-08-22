@@ -1,0 +1,71 @@
+html
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.hero-section
+{
+    background-image: url('images/Hero-section-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+.color-light-blue
+{
+    color: #8BD0FF;
+}
+
+.color-db
+{
+    background-color: #0a334f;
+    color: #8BD0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.color-db-sm
+{
+    color: #0a334f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.color-db-btn
+{
+    background-color: #0a334f;
+    color: #8BD0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.color-db-btn:hover
+{
+    background-color: #8BD0FF;
+    color: #0a334f;
+}
+
+
+.section-two
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #8BD0FF;
+    height: 500px;
+}
+
+.section-two .card-title {
+    font-size: 1.25rem;
+}
+
+
+.footer-section
+{
+    height: 300px;
+    background-color: #000000;
+}
