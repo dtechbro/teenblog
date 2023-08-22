@@ -8,14 +8,13 @@
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-light">
+    <nav class="navbar navbar-expand-md bg-light" id="header">
         <div class="container-fluid">
             <a class="navbar-brand px-3 py-1 text-white" href="#">
                 <img src="images/logo.png" alt="Teen Logo" style="width:50px;" class="rounded">
@@ -24,78 +23,141 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-            <!-- Use "d-md-flex justify-content-center" to center items on medium screens -->
-            <div class="collapse navbar-collapse d-md-flex justify-content-center" id="collapsibleNavbar">
-                <ul class="navbar-nav me-5">
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-between" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link btn" href="#">Home</a>
+                        <a class="nav-link btn active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn" href="#">About</a>
+                        <a class="nav-link btn" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn" href="#">Contact</a>
+                        <a class="nav-link btn" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn color-db-btn px-4 me-3 py-2" href="#">Register</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link btn" href="#">Register</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link btn" href="#">Login</a>
+                        <a class="nav-link btn color-db-btn px-4 py-2" href="#">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
 
     <!-- Hero section starts here -->
 
-    <div class="container-fluid hero-section text-center d-flex flex-column justify-content-center align-items-center">
+    <section class="container-fluid hero-section text-center d-flex flex-column justify-content-center align-items-center">
         <div class="container">
             <h1 class="h1 color-light-blue">Fuel Your Inquisitiveness.</h1>
-            <h5 class="h5 mb-5 color-light-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas omnis itaque quasi illo. Laudantium.</h5>
-            <button class="btn color-db-btn px-4 py-2">Get Started</button>
+            <h5 class="h5 mb-5 color-light-blue">Uncover a Tapestry of Narratives, Perspectives, and Proficiency Accross Every Realm.</h5>
+            <button class="btn color-db-btn-get px-4 py-2">Get Started</button>
         </div>
-    </div>
+    </section>
 
     <!-- The next section goes here -->
 
-    <div class="container-fluid pt-4 section-two">
+    <section class="container-fluid pt-4 card-section">
         <div class="container">
             <h3 class="h3">Trending on blogs...</h3>
         </div>
-        <div class="container mx-auto mt-4 d-flex justify-content-between align-items-center">
-            <div class="card mx-auto d-block col-md-3">
-                <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
-                  <p class="card-text">Some example text.</p>
+        <div class="container mx-auto mt-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            <div class="card mx-auto d-block col-md-3">
-                <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
-                  <p class="card-text">Some example text.</p>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            <div class="card mx-auto d-block col-md-3">
-                <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
-                  <p class="card-text">Some example text.</p>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/blog-headline.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Exploring the Dynamics of Weather and Climate</h4>
+                            <p class="card-text">Some example text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    
 
 
     <!-- The next following section goes here -->
 
+    <section class="container-fluid pt-5 pe-0 select-section" id="about">
+        <div class="container d-flex justify-content-center mt-5 pt-3 pe-lg-0 me-lg-0">
+            <div class="col-md-8 col-lg-6 text-center">
+                <h3 class="h3 mb-5 color-light-blue">Selecting the Ideal Design</h3>
+                <h5 class="display-5 font-light text-light">Curate Your Blog's Look: Design a Stunning Platform that Reflects Your Style. Opt for User-Friendly Templates with Versatile Arrangements and an Array of Background Images, or Unleash Your Creativity and Fashion a Unique Design.</h5>
+            </div>
+            <div class="col-md-6 d-none d-lg-block text-center">
+                <img src="images/about-section.png" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Any other section is to be written here -->
 
+    <section class="container-fluid d-flex flex-column align-items-center justify-content-around text-center subscribe-section">
+        <div class="col-8">
+            <h3 class="h3 mx-auto">Subscribe to Our Newsletter</h3>
+        </div>
+        <div class="col-8">
+            <form action="">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Your email address">
+                    <button class="btn input-group-text color-db-btn-sub">Subscribe</button>
+                  </div>
+            </form>
+        </div>
+        <div class="col-8">
+            <h5 class="display-5 font-light text">
+                Stay in the Loop with Our Exclusive Newsletter - Knowledge Delivered to Your Inbox!
+            </h5>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <div class="container-fluid footer-section"></div>
+    <footer class="pt-5 mt-auto text-light footer-section" id="contact">
+        <hr class="my-2 mt-5 bg-primary">
+        <div class="container mt-5 d-flex flex-column justify-content-center">
+            <div class="row mt-5">
+                <div class="col-md-8 mx-auto xs-padding text-center">
+                   <div class="copyright">&copy; <script type="text/javascript"> document.write(new Date().getFullYear())</script> Devloped By <a href="mailto:thetechteens23@gmail.com?subject=Hi%20dtechteens.&body=I%20saw%20one%20of%20your%20websites%20and%20I%20need%20you%20to%20create%20one%20for%20me.">thetechteens</a></div>
+                </div>
+                <!-- <div class="col-md-6 xs-padding">
+                   
+                </div> -->
+            </div>
+        </div>
+    </footer>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
