@@ -1,15 +1,25 @@
-// server.js
-const express = require("express");
-const app = express();
-const path = require("path");
-const PORT = process.env.PORT || 3000;
+const server = require('./src/routes/index');
+const dotenv = require('dotenv').config
 
-app.use(express.static("frontend"));
+const port = process.env.PORT || 4000;
 
-app.get("/getData", (req, res) => {
-    res.json({ message: "We are cooking at the moment..." });
+
+require('dotenv').config();
+const db = require('./src/config/db');
+
+db()
+  .then(() => {
+    console.log('Database connected');
+  })
+  .catch((err) => {
+    console.log(`Database connection failed ${err}`);
+  });
+
+server.listen(port, () => {
+  console.log(`Web Service Running on: ${port}`)
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+
+
+
+
