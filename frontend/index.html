@@ -11,7 +11,10 @@
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="style.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Ionicons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-light" id="header">
@@ -37,7 +40,7 @@
                 </ul>
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link btn color-db-btn px-4 me-3 py-2" href="#">Register</a>
+                        <a class="nav-link btn color-db-btn px-4 me-md-3 py-2" href="#">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn color-db-btn px-4 py-2" href="#">Login</a>
@@ -60,7 +63,7 @@
 
     <!-- The next section goes here -->
 
-    <section class="container-fluid pt-4 card-section">
+    <section class="container-fluid py-5 card-section">
         <div class="container">
             <h3 class="h3">Trending on blogs...</h3>
         </div>
@@ -110,13 +113,13 @@
 
     <!-- The next following section goes here -->
 
-    <section class="container-fluid pt-5 pe-0 select-section" id="about">
-        <div class="container d-flex justify-content-center mt-5 pt-3 pe-lg-0 me-lg-0">
+    <section class="container-fluid pt-5 pb-5 pb-lg-0 pe-0 select-section" id="about">
+        <div class="container d-flex justify-content-center mt-5 pt-5 pe-lg-0 me-lg-0">
             <div class="col-md-8 col-lg-6 text-center">
                 <h3 class="h3 mb-5 color-light-blue">Selecting the Ideal Design</h3>
                 <h5 class="display-5 font-light text-light">Curate Your Blog's Look: Design a Stunning Platform that Reflects Your Style. Opt for User-Friendly Templates with Versatile Arrangements and an Array of Background Images, or Unleash Your Creativity and Fashion a Unique Design.</h5>
             </div>
-            <div class="col-md-6 d-none d-lg-block text-center">
+            <div class="col-lg-6 d-none d-lg-block text-center select-img-div">
                 <img src="images/about-section.png" alt="" width="100%">
             </div>
         </div>
@@ -125,15 +128,19 @@
 
     <!-- Any other section is to be written here -->
 
-    <section class="container-fluid d-flex flex-column align-items-center justify-content-around text-center subscribe-section">
+    <!-- Subscribe Section -->
+
+    <section class="container-fluid d-flex flex-column align-items-center justify-content-around py-5 text-center subscribe-section">
         <div class="col-8">
             <h3 class="h3 mx-auto">Subscribe to Our Newsletter</h3>
         </div>
         <div class="col-8">
             <form action="">
                 <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Your email address">
-                    <button class="btn input-group-text color-db-btn-sub">Subscribe</button>
+                    <input type="email" class="form-control email-input" placeholder="Your email address">
+                    <button class="btn input-group-text color-db-btn-sub submit-button">Subscribe</button>
+                    <br>
+                    <h5 class="d-none display-5 email-p font-light text-danger"></h5>
                   </div>
             </form>
         </div>
@@ -144,10 +151,50 @@
         </div>
     </section>
 
+
+    <!-- Widget Section -->
+
+    <section id="contact" class="pt-5 text-light padding widget-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 sm-padding">
+                    <div class="footer_widget">
+                        <img class="mb-15" src="images/logo.png" width="20%" alt="Brand">
+                        <ul class="navbar-nav ms-2 widget-social">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-primary text-primary" target="_self"><i class="icon ion-logo-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.twitter.com/dtechteens/#" class="nav-link text-primary" target="_self"><i class="icon ion-logo-twitter"></i></a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link text-primary"><i class="icon ion-logo-googleplus" target="_self"></i></a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="https://www.instagram.com/dtechteens/#" class="nav-link text-primary"><i class="icon ion-logo-instagram" target="_self"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-primary"><i class="icon ion-logo-linkedin" target="_self"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 sm-padding">
+                    <div class="footer-widget">
+                        <h3>Location</h3>
+                        <p>Our Address</p>
+                        <p><a href="mailto:thetechteens23@gmail.com">thetechteens23@gmail.com</a> <br><a href="https://wa.me/234?text=Hello%20there,%20I%20am%20interested%20in.">+234</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Footer -->
-    <footer class="pt-5 mt-auto text-light footer-section" id="contact">
-        <hr class="my-2 mt-5 bg-primary">
-        <div class="container mt-5 d-flex flex-column justify-content-center">
+    <footer class="py-5 mt-auto text-light footer-section" id="contact">
+        <hr class="mt-5 bg-primary">
+        <div class="container mt-0 d-flex flex-column justify-content-center">
             <div class="row mt-5">
                 <div class="col-md-8 mx-auto xs-padding text-center">
                    <div class="copyright">&copy; <script type="text/javascript"> document.write(new Date().getFullYear())</script> Devloped By <a href="mailto:thetechteens23@gmail.com?subject=Hi%20dtechteens.&body=I%20saw%20one%20of%20your%20websites%20and%20I%20need%20you%20to%20create%20one%20for%20me.">thetechteens</a></div>
@@ -161,6 +208,10 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
