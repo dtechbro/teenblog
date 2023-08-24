@@ -69,7 +69,6 @@ li .color-db-btn
 {
     font-family: 'Poppins', sans-serif;
     background-color: #8BD0FF;
-    height: 500px;
 }
 
 
@@ -81,26 +80,15 @@ li .color-db-btn
 
 .select-section
 {
-    height: 600px;
     background-color: #0a334f;
     font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width:768px) {
-    .card-section
-    {
-        height: 2100px;
-    }
 }
 @media screen and (min-width:576px) {
-    .card-section
-    {
-        height: 850px;
-    }
-    .select-section
-    {
-        height: 450px
-    }
+}
+@media screen and (min-width:768px) {
     .color-db-btn
     {
         background-color: #0a334f;
@@ -115,43 +103,14 @@ li .color-db-btn
         color: #0a334f;
     }
 }
-@media screen and (min-width:768px) {
-    .card-section
-    {
-        height: 900px;
-    }
-    .select-section
-    {
-        height: 500px
-    }
+@media screen and (min-width:992px)
+{
 }
-@media screen and (min-width:992px) {
-    .card-section
-    {
-        height: 800px;
-    }
-    .select-section{
-        height: 548px;
-    }
+@media screen and (min-width:1200px)
+{
 }
-@media screen and (min-width:1200px) {
-    .card-section
-    {
-        height: 500px;
-    }
-    .select-section{
-        height: 632px;
-    }
-}
-@media screen and (max-width:576px) {
-    .card-section
-    {
-        height: 2000px;
-    }
-    .select-section
-    {
-        height: 450px;
-    }
+@media screen and (max-width:576px)
+{
 }
 
 .select-section h3
@@ -179,14 +138,13 @@ li .color-db-btn
 }
 
 
-.footer-section
+.widget-section, .footer-section
 {
-    height: 250px;
     background-color: #000000;
     font-family: 'Poppins', sans-serif;
 }
 
-.footer-section a
+.footer-section a, .widget-section a
 {
     text-decoration: none;
 }
