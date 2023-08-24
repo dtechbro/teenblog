@@ -144,6 +144,12 @@ li .color-db-btn
     font-family: 'Poppins', sans-serif;
 }
 
+ul
+{
+    list-style-type: none;
+    column-gap: 1.5rem;
+}
+
 .footer-section a, .widget-section a
 {
     text-decoration: none;
